@@ -17,9 +17,14 @@ const Campus = db.define("campus", {
     type: Sequelize.STRING,
     allowNull: false
   },
-
   description: {
+    type: Sequelize.TEXT,
+    allowNull: true
+  },
+  imageUrl: {
     type: Sequelize.STRING,
+    defaultValue: "https://research.collegeboard.org/media/2022-02/iStock_000021255451_Large-780x585.jpg",
+    allowNull: true
   }
 });
 
